@@ -13,8 +13,8 @@ Plugin 'aluriak/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'simeji/winresizer'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'kristijanhusak/vim-hybrid-material'
-Plugin 'morhetz/gruvbox'
+Plugin 'kristijanhusak/vim-hybrid-material'
+"Plugin 'morhetz/gruvbox'
 Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'wakatime/vim-wakatime'
@@ -24,6 +24,8 @@ Plugin 'jremmen/vim-ripgrep'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'aserebryakov/vim-todo-lists'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,15 +45,30 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
 set background=dark
-"colorscheme hybrid_material
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+colorscheme hybrid_material
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = "hard"
 set nohlsearch
 set colorcolumn=100
 set relativenumber
 :highlight LineNr ctermfg=grey
 
 command W w
+
+" Disable Arrow Keys in Normal mode
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+" Disable Arrow Keys in Insert mode
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+" Disable mouse
+set mouse=
 
 " Normal Mode
 nnoremap <C-e> 5<C-e>
@@ -126,3 +143,4 @@ let g:user_emmet_settings = {
 \      'quote_char': "'",
 \  },
 \}
+}
