@@ -13,6 +13,7 @@ autocmd VimEnter :GitGutterDisable wincmd l
 nmap <C-g> :GitGutterToggle<CR>
 
 " vim-airline
+let g:airline_theme = "hybrid"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#enabled=0
 let g:airline_section_z = '%{strftime("%H:%M %d/%b/%y")}'

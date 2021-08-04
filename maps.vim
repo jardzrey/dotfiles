@@ -12,13 +12,20 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
 set background=dark
-colorscheme hybrid_material
-"colorscheme gruvbox
-"let g:gruvbox_contrast_dark = "hard"
 set nohlsearch
 set colorcolumn=100
 set relativenumber
 :highlight LineNr ctermfg=grey
+
+" HYBRID MATERIAL CONFIG
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+set background=dark
+colorscheme hybrid_material
+
+" GRUVBOX CONFIG
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = "hard"
 
 command W w
 
